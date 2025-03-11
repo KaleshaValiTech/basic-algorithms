@@ -1,0 +1,136 @@
+Day-2 Afternoon Algorithm exercises Codes
+===================
+
+Problem 1: Calculate the Sum of Natural Numbers
+
+Code:-
+# Input
+n = int(input("Enter a number: "))
+
+# Initialize sum
+total = 0
+
+# Loop to calculate sum
+for i in range(1, n + 1):
+    total += i
+
+# Output
+print(f"The sum of natural numbers from 1 to {n} is: {total}")
+
+
+Input:-
+Enter a number: 5  
+output:-
+The sum of natural numbers from 1 to 5 is: 15  
+
+---------------------------------------------------------------------------------
+
+Problem 2: Check for Prime Number
+
+Code:-
+# Input
+n = int(input("Enter a number: "))
+
+# Check for prime
+is_prime = True
+if n <= 1:
+    is_prime = False
+else:
+    for i in range(2, int(n**0.5) + 1):
+        if n % i == 0:
+            is_prime = False
+            break
+
+# Output
+print(f"{n} is {'prime' if is_prime else 'not prime'}.")
+
+
+
+Input:-
+Enter a number: 7  
+output:-
+7 is prime. 
+Input:- 
+Enter a number: 10  
+output:-
+10 is not prime.  
+
+
+----------------------------------------------------------------------------------------
+
+
+Problem 3: Find the Maximum of Three Numbers
+
+Code:-
+# Input
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+c = float(input("Enter third number: "))
+
+# Find maximum
+max_num = max(a, b, c)
+
+# Output
+print(f"The maximum of {a}, {b}, and {c} is: {max_num}")
+
+
+Input:-
+Enter first number: 3  
+Enter second number: 7  
+Enter third number: 5  
+output:-
+The maximum of 3, 7, and 5 is: 7  
+
+-----------------------------------------------------------------------------------------
+
+Problem 4: Factorial Calculation
+
+Code:-
+# Input
+n = int(input("Enter a number: "))
+
+# Initialize factorial
+factorial = 1
+
+# Loop to calculate factorial
+for i in range(1, n + 1):
+    factorial *= i
+
+# Output
+print(f"The factorial of {n} is: {factorial}")
+
+
+Input:-
+Enter a number: 4  
+output:-
+The factorial of 4 is: 24  
+
+-------------------------------------------------------------------------------------------
+
+Problem 5: Check if a Number is Even or Odd
+
+COde:-
+# Input
+n = int(input("Enter a number: "))
+
+# Check even or odd
+result = "Even" if n % 2 == 0 else "Odd"
+
+# Output
+print(f"The number {n} is {result}.")
+
+
+Input:-
+Enter a number: 6  
+output:-
+The number 6 is Even.  
+Input:-
+Enter a number: 9  
+output:-
+The number 9 is Odd.  
+
+
+
+
+
+
